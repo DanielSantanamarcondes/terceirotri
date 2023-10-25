@@ -1,4 +1,3 @@
-alert('Ola Mundo');
 function tocaSom(idElementoAudio){
 document.querySelector(idElementoAudio).play();
 }
@@ -18,12 +17,11 @@ document.querySelector(idElementoAudio).play();
             tecla.onclick = function (){
                tocaSom(idAudio);  
         }
-            tecla.onkeydown = fuction(){
+            tecla.onkeydown = function() {
              tecla.classlist.add('ativa'); 
             }
             tecla.onkeydown = function(){
                 tecla.classlist.remove('ativa');
             }
-            contador=contador + 1;
             console.log(contador)
       }
