@@ -19,6 +19,11 @@ document.querySelector(idElementoAudio).play();
                tocaSom(idAudio);  
         }
             tecla.onkeydown = fuction(){
-              
+             tecla.classlist.add('ativa'); 
             }
+            tecla.onkeydown = function(){
+                tecla.classlist.remove('ativa');
+            }
+            contador=contador + 1;
+            console.log(contador)
       }
