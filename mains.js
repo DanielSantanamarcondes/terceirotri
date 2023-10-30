@@ -13,9 +13,11 @@ document.querySelector(idElementoAudio).play();
             const instrumento = tecla.classLista[1];
             const idAudio = `#som_ ${instrumento}`;
             console.log(idAudio);
+            console.log(instrumento)
 
             tecla.onclick = function (){
                tocaSom(idAudio);  
+
         }
             tecla.onkeydown = function() {
              tecla.classlist.add('ativa'); 
