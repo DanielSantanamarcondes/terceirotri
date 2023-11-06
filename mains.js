@@ -4,6 +4,11 @@ function tocaSom(idElementoAudio){
   if(elemento === null) {
    alert('Elemento não encontrado');
   }
+  if (elemento && elemento.localName === 'audio') {
+   elemento.play();
+  }else {
+   alert('Elemento não encontrado');
+  }
 }
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
