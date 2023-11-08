@@ -25,7 +25,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
             }
         };
             tecla.onkeyup = function(){
-                tecla.classlist.remove('ativa');
+                tecla.classList.remove('ativa');
             };
             console.log(instrumento);
          console.log(contador);
